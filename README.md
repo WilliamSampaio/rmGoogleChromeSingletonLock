@@ -7,7 +7,7 @@
 Just run:
 
 ```bash
-curl -s https://raw.githubusercontent.com/WilliamSampaio/rmGoogleChromeSingletonLock/master/install | bash
+curl https://raw.githubusercontent.com/WilliamSampaio/rmGoogleChromeSingletonLock/master/installer | bash
 ```
 
 ## Uinstall
