@@ -2,11 +2,11 @@
 set -e
 REPO_PATH=$HOME/.rmGoogleChromeSingletonLock
 git clone https://github.com/WilliamSampaio/rmGoogleChromeSingletonLock.git $REPO_PATH
-sudo cp $PATH/rmSingletonLock /usr/bin
+sudo cp $REPO_PATH/rmSingletonLock /usr/bin
 sudo chmod +x /usr/bin/rmSingletonLock
-sudo cp $PATH/rmsingletonlock.service /etc/systemd/system
+sudo cp $REPO_PATH/rmsingletonlock.service /etc/systemd/system
 sudo chmod 644 /etc/systemd/system/rmsingletonlock.service
 sudo systemctl enable rmsingletonlock.service
 
-sudo cp $PATH/rmSingletonLockUninstall /usr/bin
+sudo cp $REPO_PATH/rmSingletonLockUninstall /usr/bin
 sudo chmod +x /usr/bin/rmSingletonLockUninstall
