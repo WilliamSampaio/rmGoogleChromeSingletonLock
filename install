@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -e
 PATH=$HOME/.rmGoogleChromeSingletonLock
 git clone https://github.com/WilliamSampaio/rmGoogleChromeSingletonLock.git $PATH
