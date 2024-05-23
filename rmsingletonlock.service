@@ -1,0 +1,9 @@
+[Unit]
+Description=Remove SingletonLock.
+
+[Service]
+Type=simple
+ExecStart=/bin/bash $HOME/scripts_sistema/rmSingletonLock
+
+[Install]
+WantedBy=multi-user.target
