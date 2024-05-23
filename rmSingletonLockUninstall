@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 sudo systemctl disable rmsingletonlock.service
 sudo rm /etc/systemd/system/rmsingletonlock.service
 sudo rm /usr/bin/rmSingletonLock

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 rm $HOME/.config/google-chrome/SingletonLock
 # debug script
 # uname -a > $HOME/teste.txt
