@@ -1,7 +1,0 @@
-#!/bin/bash
-index_main() {
-    set -e
-    curl -s -S -L https://raw.githubusercontent.com/WilliamSampaio/rmGoogleChromeSingletonLock/master/install | bash
-}
-
-index_main

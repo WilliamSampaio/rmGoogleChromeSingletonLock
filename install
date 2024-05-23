@@ -1,7 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -e
-PATH=$HOME/.rmGoogleChromeSingletonLock
-$(which git) clone https://github.com/WilliamSampaio/rmGoogleChromeSingletonLock.git $PATH
+REPO_PATH=$HOME/.rmGoogleChromeSingletonLock
+git clone https://github.com/WilliamSampaio/rmGoogleChromeSingletonLock.git $REPO_PATH
 sudo cp $PATH/rmSingletonLock /usr/bin
 sudo chmod +x /usr/bin/rmSingletonLock
 sudo cp $PATH/rmsingletonlock.service /etc/systemd/system
