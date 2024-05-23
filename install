@@ -1,2 +1,11 @@
 #!/usr/bin/env bash
-git clone 
+PATH=$HOME/.rmGoogleChromeSingletonLock
+git clone https://github.com/WilliamSampaio/rmGoogleChromeSingletonLock.git $PATH
+sudo cp $PATH/rmSingletonLock /usr/bin
+sudo chmod +x /usr/bin/rmSingletonLock
+sudo cp $PATH/rmsingletonlock.service /etc/systemd/system
+sudo chmod 644 /etc/systemd/system/rmsingletonlock.service
+sudo systemctl enable rmsingletonlock.service
+
+sudo cp $PATH/rmSingletonLockUninstall /usr/bin
+sudo chmod +x /usr/bin/rmSingletonLockUninstall

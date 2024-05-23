@@ -1,9 +1,9 @@
 [Unit]
-Description=Remove SingletonLock.
+Description=Remove SingletonLock from Google Chrome config.
 
 [Service]
 Type=simple
-ExecStart=/bin/bash $HOME/scripts_sistema/rmSingletonLock
+ExecStart=/bin/bash rmSingletonLock
 
 [Install]
 WantedBy=multi-user.target
